@@ -1,2 +1,48 @@
 # StockViz
-A Streamlit app to visualize stock data and calculate option prices.
+
+**StockViz** is a simple Streamlit web app that lets you:
+
+- View key stock metrics (current price, 6-month % change, 52-week high/low) via **yfinance**  
+- Plot a 6-month historical price chart  
+- Estimate European **call** and **put** option prices using the **Black-Scholes** model  
+
+---
+
+##  Features
+
+1. **Real-time Stock Data**  
+   - Current closing price  
+   - 6-month percentage change  
+   - 52-week high and low  
+
+2. **Interactive Chart**  
+   - Line chart of closing prices over the last 6 months  
+
+3. **Black-Scholes Option Calculator**  
+   - Input:  
+     - Current stock price (S)  
+     - Strike price (K)  
+     - Time to expiration in years (T)  
+     - Risk-free interest rate (r)  
+     - Volatility (σ)  
+     - Option type (Call / Put)  
+   - Output: Theoretical option price 
+
+
+More About Black-Scholes Model:
+   What it is: A mathematical framework for valuing European call and put options..
+
+   What it does: Estimates a “fair” option price under idealized conditions (with assumption constant volatility, no dividends, continuous trading).
+
+   How it works:
+
+   Calculates two parameters, d₁ and d₂, based on current stock price (S), strike price (K), time to expiration (T), volatility (σ), and risk-free rate (r).
+
+   Uses the cumulative normal distribution, Φ(·), to weight payoff probabilities under a risk-neutral measure.
+
+   Produces closed-form expressions for call and put prices:
+   ![image](https://github.com/user-attachments/assets/1c843f48-09f3-4d00-be0e-a78712b2945b)
+
+To know more about Black-Scholes, you can check out this link : https://www.investopedia.com/terms/b/blackscholes.asp
+
+
