@@ -22,14 +22,14 @@ if Stock_symbol:
         start6 = hist6mo["Close"].iloc[0]
         end6 = hist6mo["Close"].iloc[-1]
         perc6m = 100 * (end6 - start6) / start6
-        high52 = hist1yr["Close"].max()
-        low52 = hist1yr["Close"].min()
+        high52 = hist1yr["High"].max()
+        low52 = hist1yr["Low"].min()
 
         
         st.header("Overview")
         col1, col2 = st.columns(2)
         col1.metric("Current Price", f"${curr_price:.2f}")
-        col2.metric("Last 6-Month Change", f"{perc6m:.1f}%")
+        col2.metric("Last 6-Month Change", f"{perc6m:.2f}%")
 
         col3, col4 = st.columns(2)
         col3.metric("52-Week High", f"${high52:.2f}")
