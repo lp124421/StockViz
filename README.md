@@ -43,5 +43,6 @@ More About Black-Scholes Model:
    Produces closed-form expressions for call and put prices:
    ![image](https://github.com/user-attachments/assets/1c843f48-09f3-4d00-be0e-a78712b2945b)
 
+To know more about Black-Scholes, you can check out this link : https://www.investopedia.com/terms/b/blackscholes.asp
 
 
