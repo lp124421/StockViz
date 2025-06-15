@@ -41,66 +41,7 @@ More About Black-Scholes Model:
    Uses the cumulative normal distribution, Φ(·), to weight payoff probabilities under a risk-neutral measure.
 
    Produces closed-form expressions for call and put prices:
+   ![image](https://github.com/user-attachments/assets/1c843f48-09f3-4d00-be0e-a78712b2945b)
 
-𝐶
-=
-𝑆
- 
-Φ
-(
-𝑑
-1
-)
-−
-𝐾
- 
-𝑒
-−
-𝑟
-𝑇
-Φ
-(
-𝑑
-2
-)
-,
-𝑃
-=
-𝐾
- 
-𝑒
-−
-𝑟
-𝑇
-Φ
-(
-−
-𝑑
-2
-)
-−
-𝑆
- 
-Φ
-(
-−
-𝑑
-1
-)
-C=SΦ(d 
-1
-​
- )−Ke 
-−rT
- Φ(d 
-2
-​
- ),P=Ke 
-−rT
- Φ(−d 
-2
-​
- )−SΦ(−d 
-1
-​
- )
+
+
